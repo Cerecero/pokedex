@@ -28,5 +28,5 @@ const pokeImage = (url) => {
 const pokeData = (abilities) => {
     const pokeAbilities = document.getElementById("abilities");
     const abilitiesName = abilities.map(item => item.ability.name);
-    
+    pokeAbilities.innerHTML = abilitiesName;
 }
