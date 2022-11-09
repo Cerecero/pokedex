@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+body{
+    font-family: 'Press Start 2P', cursive;
+}
+button{
+    font-family: 'Press Start 2P', cursive;
+}
+input[type="text"]{
+    font-family: 'Press Start 2P', cursive;
+    opacity: 5;
+    text-align: center;
+}
+.pokedex h1{
+    display: flex;
+    justify-content: center;
+}
+.information{
+    display: block;
+    
+}
+.pokeName {
+    text-transform: capitalize;
+}
+.pokeStats{
+    display: flex;
+    flex-direction: column;
+}
+.pokeStats b{
+    background-color: red;
+    
+}
+.pokeStats p{
+    background-color: green;
+    
+}
