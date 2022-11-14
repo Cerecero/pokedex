@@ -14,6 +14,8 @@ const fetchPokemon = () => {
             pokeIds.innerHTML = "";
             const pokeType = document.getElementById("pokeType");
             pokeType.innerHTML = "";
+            const pokeStat = document.getElementById("pokeStats");
+            pokeStat.innerHTML = "";
         }
         else {
             return res.json();
@@ -72,8 +74,9 @@ const pokeStats = (stat) => {
         const statElement = document.createElement("p");
         const statName = document.createElement("p");
         const statAmount = document.createElement("p");
-        statName.textContent = item.stat.name;
         stats.appendChild(statElement);
+
+        statName.textContent = item.stat.name;
         statAmount.textContent = item.base_stat;
         statElement.appendChild(statName).appendChild(statAmount);
     });

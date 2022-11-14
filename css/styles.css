@@ -2,6 +2,7 @@
 
 body{
     font-family: 'Press Start 2P', cursive;
+    
 }
 button{
     font-family: 'Press Start 2P', cursive;
@@ -11,26 +12,67 @@ input[type="text"]{
     opacity: 5;
     text-align: center;
 }
-.pokedex h1{
+.pokedex {
     display: flex;
     justify-content: center;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    margin-right: 100px;
+    margin-left: 100px;
+    background-color: red;
 }
-.information{
-    display: block;
+h1{
+    display: flex;
     
 }
+.search{
+    display: flex;
+    flex-direction: column;
+}
+.search input{
+    background-color: green;
+    border: none;
+    height: 100px;
+    
+}
+img {
+    width: 100%;
+    background-color: gray;
+}
+.break{
+    width: 100px;
+}
+.information{
+    display: flex;
+    flex-direction: column;
+}
 .pokeName {
+    display: flex;
     text-transform: capitalize;
 }
 .pokeStats{
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
+    background-color: blue;
+    width: 550px;
+
 }
 .pokeStats b{
-    background-color: red;
-    
+    color: wheat;
+    width:  100%;
 }
 .pokeStats p{
+    display: flex;
     background-color: green;
+    align-items: center;
+    width: 50%;
+    justify-content: space-around;
     
+}
+.pokeStats p p{
+    display: flex;
+    background-color: grey;
+}
+.pokeStats p p p{
+    padding-left: 10px;
 }
