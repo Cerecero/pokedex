@@ -81,3 +81,11 @@ const pokeStats = (stat) => {
         statElement.appendChild(statName).appendChild(statAmount);
     });
 }
+
+let input = document.getElementById("pokeName");
+input.addEventListener("keypress", function(event){
+    if (event.key === "Enter") {
+        event.preventDefault();
+        document.getElementById("pokeButton").click();
+    }
+})
