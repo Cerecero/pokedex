@@ -40,12 +40,16 @@ const fetchPokemon = () => {
 
 const pokeImage = (url) => {
     const pokeImg = document.getElementById("pokeImg");
+    pokeImg.style.backgroundColor = '#eddaa6';
+    pokeImg.style.paddingRight = '70px';
+    pokeImg.style.paddingLeft = '70px';
+    pokeImg.style.borderRadius = '10px'
     pokeImg.src = url;
 }
 
 const pokeData = (abilities) => {
     const pokeAbilities = document.getElementById("abilities");
-    const abilitiesName = abilities.map(item => item.ability.name+"<br>");
+    const abilitiesName = abilities.map(item => item.ability.name);
     pokeAbilities.innerHTML = "<b> Habilidades: </b>" + abilitiesName;
 }
 
