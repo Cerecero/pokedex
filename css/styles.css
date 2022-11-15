@@ -2,45 +2,56 @@
 
 body{
     font-family: 'Press Start 2P', cursive;
-    
+    background-image:  url('/pokedex/images/background.png');
+    background-size: cover;
 }
 button{
     font-family: 'Press Start 2P', cursive;
+    width: 250px;
+    height: 60px;
+    border-style: style;
+    border-color: #000;
+    border-width: 2px;
+    background-color: #829DD2;
+    border-radius: 10px;
 }
 input[type="text"]{
     font-family: 'Press Start 2P', cursive;
-    opacity: 5;
     text-align: center;
+    
 }
 .pokedex {
     display: flex;
     justify-content: center;
     padding-top: 100px;
     padding-bottom: 100px;
-    margin-right: 100px;
-    margin-left: 100px;
+    padding-left: 40px;
+    margin-right: 50px;
+    margin-left: 50px;
     background-color: red;
+    width: 90%;
+    height: 100%;
+    border-radius: 30px;
+    box-shadow: 10px 10px #820707;
 }
-h1{
-    display: flex;
-    
-}
+
 .search{
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
 .search input{
     background-color: rgb(0, 128, 0);
-    border: none;
-    height: 100px;
+    height: 90px;
     border-style: solid;
-    border-width: 4px;
+    border-width: 3px;
     border-color: #000;
-    
+    border-radius: 10px;
 }
-img {
-    
-    background-color: gray;
+::placeholder{
+    color: black;
+    opacity: 0.6;
+    font-size: large;
 }
 .break{
     width: 100px;
@@ -48,6 +59,14 @@ img {
 .information{
     display: flex;
     flex-direction: column;
+    width: 60%;
+    margin-right: 50px;
+    padding-top: 30px;
+    padding-left: 20px;
+    background-color: rgb(0, 128, 0);
+    border-style: solid;
+    border-width: 4px;
+    border-color: #000;
 }
 .pokeName {
     display: flex;
@@ -56,17 +75,15 @@ img {
 .pokeStats{
     display: flex;
     flex-wrap: wrap;
-    background-color: blue;
     width: 550px;
 
 }
 .pokeStats b{
-    color: wheat;
+    
     width:  100%;
 }
 .pokeStats p{
     display: flex;
-    background-color: green;
     align-items: center;
     width: 50%;
     justify-content: space-around;
@@ -74,8 +91,55 @@ img {
 }
 .pokeStats p p{
     display: flex;
-    background-color: grey;
 }
 .pokeStats p p p{
     padding-left: 10px;
+}
+.pokeAbilities, .pokeName, .pokeId, .pokeType {
+    margin-bottom: 10px;
+}
+.pokeName b, .pokeId b, .pokeAbilities b,.pokeType b, .pokeStats b{
+    color: #09bbed;
+}
+/*Light Bulb*/
+.light-bulb{
+    display: flex;
+    position: absolute;
+    padding-left: 60px;
+    padding-top: 10px;
+}
+.white-color {
+    background-color: white;
+    width: 85px;
+    height: 85px;
+    border-radius: 50%;
+    padding-top: 3px;
+}
+
+.blue-color {
+    background-color: #09bbed;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    margin: 0 auto;
+    border: 5px solid white;
+}
+
+.blue-light-color {
+    background-color: #0bcdff;
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    margin: 0 auto;
+    padding-right: 10px;
+}
+
+.white-dot {
+    background-color: #9ce8ff;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    margin: 0 auto;
+    padding-left:  10px;
+    border: 10px solid #0bcdff;
 }
